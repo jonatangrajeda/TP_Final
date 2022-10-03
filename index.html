@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            top: 0;
+            left: 0;
+            padding-top: 60px;
+            float: left;
+        }
+
+        .sidenav a {
+            padding: 6px 6px 6px 32px;
+
+            font-size: 16px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #555
+        }
+
+        #prodMasElegidos {
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+    <title>index prueba</title>
+</head>
+
+<body style="background-color: #eee;">
+    <div class="container">
+        <header style="position: sticky; top: 0; z-index: 999;">
+            <div class="row" id="fila1">
+                <!--Logo-->
+                <div class="col-lg-3"><img src="Imagenes/imgLogos/logo.png" height="60" class="w-100"></div>
+                <!--Logo-->
+                <div class="col-1"></div>
+                <!--Busqueda-->
+                <div class="col-lg-4 align-self-center">
+                    <form class="d-flex" role="search">
+
+                        <input class="form-control" type="search" placeholder="Que estas buscando?" aria-label="Search">
+                        <button class="btn btn-light" type="submit" id="botonSearch">Search</button>
+
+                    </form>
+                </div>
+                <!-- Ingreso y registro -->
+                <div class="col-1"></div>
+                <div class="col-lg-3 align-self-center">
+                    <nav class="navbar navbar-expand">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>Ingresar</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>Registrarse</b></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--NAVBAR PRINCIPAL-->
+        <div class="row bg-warning">
+            <div class="col-lg-9 align-self-center">
+                <nav class="navbar navbar-expand">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><b>Inicio</b></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href=""><b>Categorias</b></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item" href="#"><b>Sillas</b></li>
+                                <li class="dropdown-item" href="#"><b>Sillones</b></li>
+                                <li class="dropdown-item" href="#"><b>Mesas</b></li>
+                                <li class="dropdown-item" href=""><b>Muebles living</b></li>
+                                <li class="dropdown-item" href="#"><b>Muebles TV - PC</b></li>
+                                <li class="dropdown-item" href="#"><b>Roperos</b></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><b>Ofertas!</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html"><b>Contacto</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienesSomos.html"><b>Quienes somos :)</b></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--SEGUINOS-->
+            <div class="col-lg-3 pt-2">
+                
+                <button type="button" class="btn">
+                    <a href="https://www.facebook.com">
+                        <img src="imagenes/imgLogos/fb.png" width="35" height="35">
+                    </a>
+                </button>
+                <button type="button" class="btn">
+                    <a href="https://www.instagram.com">
+                        <img src="imagenes/imgLogos/ig.png" width="35" height="35">
+                    </a>
+                </button>
+                
+                <button type="button" class="btn">
+                    <a href="https://api.whatsapp.com/send/?phone=543364381119">
+                        <img src="imagenes/imgLogos/wapp.png" width="35" height="35">
+                    </a>
+                </button>
+
+            </div>
+        </div>
+
+        <article>
+
+            <div id="carousel1" class="carousel slide justify-content-center" data-bs-ride="carousel">
+                <!--creo los espacios (contenedor del carousel)-->
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carousel1" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carousel1" data-bs-slide-to="1"></li>
+                    
+                </ol>
+                <div class="carousel-inner carousel-item-centered">
+                    <!--contenedor de las imagente -->
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="imagenes/imgDecoraciones/Decoracion3.jpeg" height="500"
+                            alt="...">
+                        <div class="carousel-caption">
+                            <!--titulo de la imagen-->
+                            <h3>Decoraciones</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="imagenes/imgDecoraciones/Decoracion2.jpg" height="500"
+                            alt="...">
+                        <div class="carousel-caption">
+                            <!--titulo de la imagen-->
+                            <h3>Decoraciones</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a class="carousel-control-prev" href="#carousel1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark" style="width: 50px; height: 60px;"
+                        aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#carousel1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark" style="width: 50px; height: 60px;"
+                        aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+            </div>
+        </article>
+        <hr>
+        <!-- Tarjetas ventas-->
+        <div class="sidenav">
+            <p>Categorias</p>
+            <a href="#">Sillas</a>
+            <a href="#">Sillones</a>
+            <a href="#">Mesas</a>
+            <a href="#">Muebles living</a>
+            <a href="#">Muebles TV - PC</a>
+            <a href="#">Roperos</a>
+            <br><br><br>
+            <p><i><u>Publicidades</u></i></p>
+            <img src="Imagenes/imgPublicidades/Publicidad1.webp" width="180" height="300" alt="...">
+            <br><br>
+            <br><br>
+            <img src="Imagenes/imgPublicidades/Publicidad2.jpg" width="180" height="300" alt="...">
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <p class="text-center" id="prodMasElegidos">Productos mas elegidos!</p>
+            </div>
+            <div class="row mb-2">
+                <div class="col-lg">
+                    <div class="card">
+                        <a href="Ventas/silla.html" class="btn">
+                            <img src="Imagenes/imgVentas/silla.jpg" class="card-img-top" height="300" alt="...">
+                            <div class="card-body">
+
+                                <p class="card-text">Silla Blanca Bonita<br><b>$5.000</b></p>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card">
+                        <a href="Ventas/sillon.html" class="btn">
+
+                            <img src="Imagenes/imgVentas/sillon1.jpg" class="card-img-top" height="300" alt="...">
+                            <div class="card-body">
+
+                                <p class="card-text">Sellon veigh Chulo<br><b>$30.000</b></p>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg">
+
+                    <div class="card">
+                        <a href="Ventas/mesaLarga.html" class="btn">
+                            <img src="Imagenes/imgVentas/mesa1.jpg" class="card-img-top" height="300" alt="...">
+                            <div class="card-body">
+
+                                <p class="card-text">Mesa larga Super Normal <br><b>$8.000</b></p>
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div> <!-- Fila 1 (Se encuentra el Aside)-->
+            <div class="row mb-2" style="float: top;">
+                <div class="col-lg">
+                    <div class="card">
+                        <a href="Ventas/placard2puertas.html" class="btn">
+                            <img src="Imagenes/imgVentas/placard2puerta.webp" class="card-img-top" height="300"
+                                alt="...">
+                            <div class="card-body">
+
+                                <p class="card-text">Placard de 2 puertas<br><b>$15.000</b></p>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg">
+
+                    <div class="card">
+                        <a href="Ventas/sillaGamer.html" class="btn">
+                            <img src="Imagenes/imgVentas/sillaGamer1.jpg" class="card-img-top" height="300" alt="...">
+                            <div class="card-body">
+
+                                <p class="card-text">Silla Gamer Diabolol<br><b>$80.000</b></p>
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg">
+
+                    <div class="card">
+                        <a href="Ventas/BaulBoca.html" class="btn">
+                            <img src="Imagenes/imgVentas/baulBoca.webp" class="card-img-top" height="300" alt="...">
+                            <div class="card-body">
+
+                                <p class="card-text">Baul para juguetes Bostero<br><b>$15.000</b></p>
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div> <!-- Fin Fila 2 -->
+            <div class="row mb-2">
+                
+                <div class="col-4">
+                    <div class="card">
+                        <a href="Ventas/baulRiver.html" class="btn">
+                            <img src="Imagenes/imgVentas/baulriver.webp" class="card-img-top" height="300" alt="...">
+                            <div class="card-body">
+
+                                <p class="card-text">Baul Gallinero<br><b>$15.000</b></p>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <a href="Ventas/bibliotecaInf.html" class="btn">
+                            <img src="Imagenes/imgVentas/bibliotecaInfantil.webp" class="card-img-top" height="300"
+                                alt="...">
+                            <div class="card-body">
+
+                                <p class="card-text">Biblioteca Infantil Kawai<br><b>$4.000</b></p>
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!--Fin Fila 3-->
+        </div>
+    </div>
+    <hr>
+    <footer class="bg-warning">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-3"></div>
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg bg-warning ">
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Terminos y Condiciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Derechos del consumidor</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col">
+                    <p id="derechos">
+                        IMPORTANTE: Todas las imágenes de los productos son sólo a modo ilustrativo y pueden diferir del
+                        artículo en stock. Los precios indicados tienen IVA incluído y pueden sufrir variaciones sin
+                        previo aviso.<br>
+                        Disponibilidad sujeta a stock.<br>
+                        © DecoSale 2021 - Todos los Derechos Reservados. - Hosting Web Conectemos
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous">
+    </script>
+    <script>
+        function verono() {
+            let opc = document.getElementById('opc1');
+            if (opc.className == 'd-block') {
+                opc.className = "d-none"
+            }
+            else { opc.className = "d-block" }
+        }
+    </script>
+</body>
+
+</html>
